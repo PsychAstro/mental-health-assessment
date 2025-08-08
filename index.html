@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+    <!-- Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark charcoal background */
+            background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0 32c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM56 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0 32c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM16 8c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zM48 8c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zM16 56c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zM48 56c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zM0 24c0 4.418 3.582 8 8 8s8-3.582 8-8-3.582-8-8-8-8 3.582-8 8zM64 24c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zM0 40c0 4.418 3.582 8 8 8s8-3.582 8-8-3.582-8-8-8-8 3.582-8 8zM64 40c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zM24 0c0 4.418 3.582 8 8 8s8-3.582 8-8-3.582-8-8-8-8 3.582-8 8zM40 64c0-4.418-3.582-8-8-8s-8 3.582-8 8 3.582 8 8 8 8-3.582 8-8zM24 64c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8-8-3.582-8-8zM40 0c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8zM16 24c0 4.418 3.582 8 8 8s8-3.582 8-8-3.582-8-8-8-8 3.582-8 8zM48 24c0 4.418-3.582 8-8 8s-8-3.582-8-8 3.582-8 8-8 8 3.582 8 8z' fill='%231f2937' fill-opacity='0.4'%3E%3C/path%3E%3C/svg%3E");
+            color: #e2e8f0; /* Light gray text */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-xl w-full mx-auto p-8 md:p-12 bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-3xl shadow-2xl border border-gray-700">
+        <h1 class="text-3xl md:text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4 tracking-wide">
+            Mental Health Assessment Using Your Date of Birth
+        </h1>
+        <p class="text-center text-gray-300 mb-2 leading-relaxed">
+            Your date of birth can reveal patterns that influence your mental well-being. Get a quick psychological assessment to uncover the mental health challenges you may be prone to.
+        </p>
+        <p class="text-center text-lg font-bold text-green-400 mb-6">
+            Charges: ₹50
+        </p>
+
+        <!-- How it works section -->
+        <div class="bg-gray-700 bg-opacity-50 p-6 rounded-2xl mb-8 border border-gray-600">
+            <h2 class="text-xl font-semibold text-purple-300 mb-4 text-center">How it works:</h2>
+            <ul class="text-center space-y-2 text-gray-200">
+                <li>1. Enter your name and date of birth</li>
+                <li>2. Get your personal mental health profile on WhatsApp or Telegram</li>
+                <li>3. Understand your risk areas</li>
+            </ul>
+        </div>
+        
+        <!-- Disclaimer -->
+        <div class="text-center text-sm text-yellow-400 font-semibold mb-6">
+            <span class="text-red-500">⚠</span> Note: This is for self-awareness only, not a medical diagnosis.
+        </div>
+        
+
+        <!-- Input Section -->
+        <div class="space-y-6">
+            <div>
+                <label for="name" class="block text-gray-300 text-sm font-medium mb-2">Enter your name:</label>
+                <input type="text" id="name" placeholder="E.g., Jane Doe" class="w-full px-4 py-3 bg-gray-900 border border-purple-500 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-colors duration-300">
+            </div>
+            <div>
+                <label for="dob" class="block text-gray-300 text-sm font-medium mb-2">Enter your date of birth:</label>
+                <input type="date" id="dob" class="w-full px-4 py-3 bg-gray-900 border border-purple-500 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-colors duration-300">
+            </div>
+
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a id="whatsappLink" href="https://wa.me/917871284335/" class="w-full inline-flex items-center justify-center space-x-2 bg-green-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all duration-300 transform hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.039 2c-5.516 0-9.988 4.472-9.988 9.988 0 1.764.457 3.447 1.328 4.935L2 22l5.228-1.393c1.458.824 3.107 1.282 4.811 1.282 5.517 0 9.989-4.472 9.989-9.989S17.556 2 12.039 2zm5.419 14.883c-.156.401-.58.536-1.127.265-1.579-.766-2.585-1.174-2.846-1.22-.26-.046-.44-.046-.62-.046-.179 0-.46.066-.704.354-.245.289-.933 1.119-1.14 1.354-.207.235-.414.265-.776.09-1.636-.745-3.04-1.89-4.22-3.83-.346-.56-.154-.863.09-1.098.225-.213.46-.536.696-.814.235-.28.314-.46.47-.76.155-.302.078-.568-.039-.79-.116-.22-.933-2.22-1.28-3.03-.33-.78-.667-.679-.933-.695-.26-.017-.557-.017-.853-.017-.306 0-.67.112-1.022.502-.35.39-.997.962-.997 2.348 0 1.41 1.02 2.72 1.164 2.924.144.204 2.012 3.254 4.887 4.545 2.875 1.29 2.875.86 3.407.824.532-.036 1.578-.647 1.794-1.282.217-.635.217-.98.156-1.096-.06-.115-.244-.18-.505-.316z"/>
+                    </svg>
+                    <span>Get on WhatsApp</span>
+                </a>
+                <a id="telegramLink" href="https://t.me/virtualbuddy" class="w-full inline-flex items-center justify-center space-x-2 bg-blue-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300 transform hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm5.556 7.417c.148-.71-.24-1.033-.693-.84-.523.218-8.472 3.51-9.28 3.86-.807.35-1.12.096-1.077-.66.037-.62 3.493-2.316 7.42-4.96.388-.261.644-.37.75-.357.106.012.203.048.128.163-.122.18-.756.96-1.503 1.954-1.134 1.488-.636 2.046-.226 2.327.27.18.57.135.85-.015.398-.21.99-.64 2.146-1.455.512-.358.94-.658 1.15-.76.21-.102.435-.15.656-.058.21.092.365.344.402.664.04.32-.008.685-.035.92-.04.35-.15.54-.34.628-.158.07-.34.053-.51-.05l-.946-.61c-.5-.326-1.03-.666-1.58-.99-.57-.335-1.11-.643-1.4-.78-.29-.137-.41-.157-.49-.138-.08.018-.11.05-.09.11.02.06 1.838 1.63 2.13 1.83.292.2.62.3.93.28.28-.02.58-.15.93-.41.348-.258.625-.47.88-.63.254-.158.48-.28.71-.29.23-.01.53-.13.91.03.38.16.59.57.54 1.05-.05.48-.37.89-.69 1.1-.31.21-.69.29-.98.24-.29-.05-.53-.17-.83-.34l-1.03-.61c-.55-.33-.94-.52-1.3-.59-.36-.07-.71.07-1.1.42-.38.35-.85.73-1.42 1.14-.57.41-1.13.79-1.63 1.08-.5.29-.92.42-1.32.39-.4-.03-.7-.2-.93-.43-.23-.23-.29-.53-.16-.92.08-.2.27-.47.62-.91.35-.44 3.01-3.66 8.78-4.14.73-.06 1.34.04 1.77.34.43.3.66.72.63 1.25-.03.52-.37.98-.82 1.13-.45.15-.97-.04-1.41-.33-.44-.29-1.02-.7-1.74-1.22-.72-.52-1.48-.96-2.07-1.22-.59-.26-.86-.34-.97-.27-.11.07-.06.2.14.47.2.27 2.16 2.01 2.37 2.15.21.14.48.24.8.2.32-.04.62-.25.86-.54.24-.29.35-.6.31-.95z"/>
+                    </svg>
+                    <span>Get on Telegram</span>
+                </a>
+            </div>
+
+            <div id="loadingIndicator" class="hidden text-center text-purple-400 font-semibold">
+                Preparing your assessment...
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Modal for Alerts/Messages -->
+    <div id="messageModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 transition-opacity duration-300">
+        <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-gray-700 max-w-sm w-full text-center">
+            <p id="modalMessage" class="text-white mb-6 text-lg font-medium"></p>
+            <button id="closeModalBtn" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors duration-300">
+                OK
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // --- Modal Functions ---
+        const messageModal = document.getElementById('messageModal');
+        const modalMessage = document.getElementById('modalMessage');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+
+        function showMessage(message) {
+            modalMessage.textContent = message;
+            messageModal.classList.remove('hidden');
+        }
+
+        closeModalBtn.addEventListener('click', () => {
+            messageModal.classList.add('hidden');
+        });
+
+        // --- Core Application Logic ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const whatsappLink = document.getElementById('whatsappLink');
+            const telegramLink = document.getElementById('telegramLink');
+            const nameInput = document.getElementById('name');
+            const dobInput = document.getElementById('dob');
+
+            function getMessageText(name, dob) {
+                return `Name: ${name}%0ADate of Birth: ${dob}%0A---%0A*Please provide my mental health assessment.*`;
+            }
+
+            whatsappLink.addEventListener('click', (e) => {
+                const name = nameInput.value;
+                const dob = dobInput.value;
+                
+                if (!name || !dob) {
+                    e.preventDefault(); // Prevent default link behavior if inputs are empty
+                    showMessage("Please enter both your name and date of birth.");
+                    return;
+                }
+
+                const message = getMessageText(name, dob);
+                
+                // Replace with your WhatsApp number.
+                const whatsappUrl = `https://wa.me/?text=${message}`;
+
+                window.open(whatsappUrl, '_blank');
+            });
+            
+            telegramLink.addEventListener('click', (e) => {
+                const name = nameInput.value;
+                const dob = dobInput.value;
+
+                if (!name || !dob) {
+                    e.preventDefault(); // Prevent default link behavior if inputs are empty
+                    showMessage("Please enter both your name and date of birth.");
+                    return;
+                }
+
+                const message = getMessageText(name, dob);
+
+                // Replace 'YOUR_TELEGRAM_USERNAME' with your Telegram username or group link
+                const telegramUrl = `https://t.me/share/url?url=&text=${message}`;
+                
+                window.open(telegramUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
